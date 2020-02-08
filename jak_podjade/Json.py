@@ -2,9 +2,9 @@ import json
 from collections import defaultdict
 
 
-def create_dict_with_all_stops(request_response):
+def create_dict_with_all_stops(response):
     all_stops_dict = defaultdict(str)
-    json_format = json.loads(request_response)
+    json_format = json.loads(response)
     json_values = json_format["stops"]
     for x in json_values:
         all_stops_dict[x["name"]] = x["shortName"]
@@ -12,9 +12,9 @@ def create_dict_with_all_stops(request_response):
     return all_stops_dict
 
 
-def create_dict_with_results(request_response, user_input):
+def create_dict_with_results(response, user_input):
     results = defaultdict(dict)
-    json_format = json.loads(request_response)
+    json_format = json.loads(response)
     json_values = json_format["actual"]
     json_values = filter_results(json_values, user_input)
     index = 1

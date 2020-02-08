@@ -1,8 +1,8 @@
 import unittest
-from utils import section_to_print, get_time
+from jak_podjade.utils import section_to_print, get_time
 
 
-class MyTestCase(unittest.TestCase):
+class UtilsTest(unittest.TestCase):
     def test_section_to_print(self):
         # given
         value_to_print = 'Stop'

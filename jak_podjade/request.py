@@ -1,5 +1,5 @@
 import requests
-from Json import create_dict_with_all_stops, create_dict_with_results
+from jak_podjade.Json import create_dict_with_all_stops, create_dict_with_results
 
 request_for_stops = "http://www.ttss.krakow.pl/internetservice/geoserviceDispatcher/services/stopinfo/stops?left=-648000000&bottom=-324000000&right=648000000&top=324000000"
 

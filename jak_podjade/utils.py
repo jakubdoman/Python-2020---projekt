@@ -1,4 +1,4 @@
-from constant import DIRECTION_MAX_LENGTH, LINE_NUMBER_MAX_LENGTH, INDEX_MAX_LENGTH
+from jak_podjade.constant import DIRECTION_MAX_LENGTH, LINE_NUMBER_MAX_LENGTH, INDEX_MAX_LENGTH
 
 
 def print_menu():

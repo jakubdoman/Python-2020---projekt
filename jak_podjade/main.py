@@ -1,8 +1,8 @@
-from state import State
-from utils import print_menu, handle_user_input, printing_results
-from request import load_traffic_for_stop, load_all_stops
-from constant import TRAM_NUMBERS
-from validation import validate_input
+from jak_podjade.state import State
+from jak_podjade.utils import print_menu, handle_user_input, printing_results
+from jak_podjade.request import load_traffic_for_stop, load_all_stops
+from jak_podjade.constant import TRAM_NUMBERS
+from jak_podjade.validation import validate_input
 
 state = State(False)
 all_stops = load_all_stops()
