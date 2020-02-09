@@ -17,13 +17,13 @@ while not state.should_exit:
     user_input_map = handle_user_input(state, option)
     if user_input_map is not None:
         if not user_input_map["Stop"]:
-            print("You have to select stop! Try again!\n")
+            print("\nYou have to select stop! Try again!\n")
             continue
 
         user_input_map["Stop"] = validate_input(user_input_map["Stop"], all_stops.keys())
 
         if user_input_map["LineNumber"] and user_input_map["LineNumber"] not in TRAM_NUMBERS:
-            print("Wrong line number! Try again!\n")
+            print("\nWrong line number! Try again!\n")
             continue
 
         if user_input_map["Direction"]:
