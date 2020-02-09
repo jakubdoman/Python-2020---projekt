@@ -7,6 +7,10 @@ from jak_podjade.validation import validate_input
 state = State(False)
 all_stops = load_all_stops()
 
+"""
+Główna pętla aplikacji zarządzająca jej wykonaniem.
+Odpowiada za wywołanie najważniejszych funkcji.
+"""
 while not state.should_exit:
     print_menu()
     option = input('Choose: ')
